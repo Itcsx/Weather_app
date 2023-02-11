@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #43AFFC;
+}
+.container{
+    width: 400px;
+background: #fff;
+border-radius: 10px;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    font-size: 21px;
+    font-weight: 500;
+    color: #43AFFC;
+    padding: 16px 15px;
+    align-items: center;
+}
+header i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container .inputs{
+    /* display: none; */
+}
+
+.container .info-txt{
+    font-size: 12px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.container .inputs input{
+    text-align: center;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+}
+.container .seperator{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .seperator::before{
+    content: "or";
+    color: #b3b3b3;
+    font-size: 19px;
+    padding: 0 15px;
+    background: white;
+}
+.container .inputs button{
+    color: white;
+    cursor: pointer;
+    background: #43AFFC;
+
+    transition: 0.3s all ease;
+}
+.container .inputs button:hover{
+    background: #1d9ffc;
+}
+.container .weather img{
+    max-width: 125px;
+}
+.container .weather{
+    margin: 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather_container .temp{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.weather_container .temp .num{
+    font-weight: 700;
+}
+.weather_container .temp .deg{
+    font-size: 30px;
+    display: block;
+    margin: 10px;
+}
+
+.weather_container .condition{
+    font-size: 21px;
+    text-align: center;
+
+}
+.weather_container .location{
+    display: flex;
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.bottom-details{
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    text-align: center;
+    font-size: 20px;
+    color: #1d9ffc;
+    margin-left: 20px;
+}
+.error{
+    color: red;
+}
+.pending{
+    color: blue;
+}
+
