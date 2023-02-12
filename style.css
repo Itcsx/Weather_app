@@ -61,7 +61,22 @@ header i{
     align-items: center;
     justify-content: center;
 }
+.inputs .content{
+    
+    text-align: center;
 
+}
+.inputs input{
+    border-radius: 20px;
+}
+.inputs input::placeholder{
+    color: #43AFFC;
+}
+.inputs button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
 .container .seperator::before{
     content: "or";
     color: #b3b3b3;
@@ -89,7 +104,13 @@ header i{
     justify-content: center;
     flex-direction: column;
 }
-
+.weather{
+    display: none;
+    position: relative;
+}
+.weather_container{
+    text-align: center;
+}
 .weather_container .temp{
     font-weight: 500;
     font-size: 22px;
@@ -117,12 +138,16 @@ header i{
     margin-bottom: 30px;
 
 }
+.weather_container .location .bx-map{
+font-size: 32px;
+}
 .bottom-details{
     display: flex;
     width: 100%;
     padding: 15px 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    
 }
 .column{
     text-align: center;
@@ -137,3 +162,18 @@ header i{
     color: blue;
 }
 
+.favourite_btn{
+    font-size: 32px; position: absolute; left: 10px; top: 0;
+}
+
+.favourite_btn:hover{
+    color: red;
+}
+
+.favorites{
+    display: flex;
+}
+.favorites .favorite_item{
+    flex-grow: 1;
+    padding: 10px;
+}
